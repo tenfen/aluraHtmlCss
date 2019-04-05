@@ -37,20 +37,11 @@ textarea:focus {
 button:focus {
     background-color: #8C1D3D;
 }
-fieldset > fieldset {
-    display: inline;
-}
-label[for="outro"] {
-    display: inline;
-}
-input[name="outro-assunto"] {
-    width: auto;
-}
-input[value="Outro"] ~ input {
+input[value="Outro"] + input {
     display: none;
 }
-input[value="Outro"]:checked ~ input {
-    display: inline;
+input[value="Outro"]:checked + input {
+    display: block;
 }
 .com-icone {
     position: relative;
